@@ -1,0 +1,66 @@
+
+
+
+   body {
+    background: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .heart {
+    font-size: 6em;
+    position: relative;
+  }
+  
+
+  
+  .heartecho {
+    position: absolute;
+    animation: echo 3s  infinite;
+    
+  }
+  
+
+  
+  @keyframes echo {
+    0% {
+      transform: scale(1);
+
+    }
+
+    50% {
+      transform: scale(2);
+    }
+
+
+    100% {
+      transform: scale(3) ;
+
+    }
+
+
+  }
+  .rotate{
+    animation: rotate 2s ease-in-out infinite;
+  }
+
+  @keyframes rotate {
+ 
+    0% {
+      transform: rotate( 0deg ) scale( 1 );
+    }
+  
+    50% {
+      transform: rotate( -180deg ) scale( 2 );
+    }
+    100% {
+      transform: rotate( -360deg ) scale( 3 );
+    }
+  }
+
+  
+  
+    
+  
